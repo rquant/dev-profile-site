@@ -49,6 +49,7 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+//$accordion-content-color: green;
 
 body {
   font-family: Avenir;
@@ -78,4 +79,8 @@ body {
 
 h3 {
   font-size: 1.7rem;
+}
+
+.employment-entry {
+  padding-bottom: 0.6rem;
 }
