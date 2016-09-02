@@ -90,3 +90,19 @@ img {
 .pet-project-thumbnail {
   margin: 0.8rem 0;
 }
+
+.footer {
+  background-color: #404040;
+  margin-top: 25px;
+
+  .social-links {
+    a {
+      padding-bottom: 0;
+    }
+  }
+
+  .contact-info {
+    color: #FFF;
+    font-size: 0.9rem;
+  }
+}
