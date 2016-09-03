@@ -78,6 +78,18 @@ img {
     }
   }
 
+  @include  breakpoint(small only) {
+    #responsive-menu {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .menu-icon {
+      display: none;
+    }
+  }
+
   li a {
     color: #BABABA;
   }
@@ -107,5 +119,11 @@ img {
   .contact-info {
     color: #FFF;
     font-size: 0.9rem;
+  }
+}
+
+.no-js {
+  .footer {
+    display: none;
   }
 }
