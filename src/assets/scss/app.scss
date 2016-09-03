@@ -68,11 +68,14 @@ img {
 .top-bar {
   margin: 0 0 2em;
 
-  #site-title {
+  .top-bar-title {
     color: #FFF;
     text-transform: uppercase;
     letter-spacing: 0.4em;
     font-size: 1.5rem;
+    @media only screen and (max-width: 340px) {
+      font-size: 1.3rem;
+    }
   }
 
   li a {
