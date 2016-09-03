@@ -81,6 +81,9 @@ img {
   @include  breakpoint(small only) {
     #responsive-menu {
       display: none;
+      a:first-child {
+        padding-left: 0;
+      }
     }
   }
 
