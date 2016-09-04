@@ -68,11 +68,29 @@ img {
 .top-bar {
   margin: 0 0 2em;
 
-  #site-title {
+  .top-bar-title {
     color: #FFF;
     text-transform: uppercase;
     letter-spacing: 0.4em;
     font-size: 1.5rem;
+    @media only screen and (max-width: 340px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  @include  breakpoint(small only) {
+    #responsive-menu {
+      display: none;
+      a:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    .menu-icon {
+      display: none;
+    }
   }
 
   li a {
@@ -89,4 +107,26 @@ img {
 
 .pet-project-thumbnail {
   margin: 0.8rem 0;
+}
+
+.footer {
+  background-color: #404040;
+  margin-top: 25px;
+
+  .social-links {
+    a {
+      padding-bottom: 0;
+    }
+  }
+
+  .contact-info {
+    color: #FFF;
+    font-size: 0.9rem;
+  }
+}
+
+.no-js {
+  .footer {
+    display: none;
+  }
 }
