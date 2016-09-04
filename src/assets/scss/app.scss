@@ -69,7 +69,10 @@ img {
   margin: 0 0 2em;
 
   .top-bar-title {
-    color: #FFF;
+    a {
+      color: #FFF;
+    }
+
     text-transform: uppercase;
     letter-spacing: 0.4em;
     font-size: 1.5rem;
