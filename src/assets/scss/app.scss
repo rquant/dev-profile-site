@@ -116,6 +116,10 @@ img {
   .social-links {
     a {
       padding-bottom: 0;
+
+      img {
+        max-width: 32px;
+      }
     }
   }
 
