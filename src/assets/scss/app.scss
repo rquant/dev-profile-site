@@ -106,21 +106,24 @@ img {
   }
 }
 
-// copied from http://zurb.com/building-blocks/hero-image-with-text-and-image as
-// template
+.hero-wrapper {
+  padding-bottom: 2vh;
+}
+
 .hero {
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ), url("../img/mountains-1412683.png") no-repeat center center;
   background-size: cover;
-  margin-bottom: 10vh;
+  //margin-bottom: 10vh;
   padding-bottom: 10px;
 
   .intro {
     color: #fff;
     text-align: center;
   }
+
   h1 {
     padding-top: 2.5rem;
     font-size: 1.5rem;
@@ -128,6 +131,7 @@ img {
     letter-spacing: -0.025em;
     font-weight: 300;
   }
+
   p {
     line-height: 1.75em;
     font-weight: 200;
@@ -155,6 +159,10 @@ img {
       }
     }
   }
+}
+
+.page-content {
+  margin-top: 5vh;
 }
 
 .employment-entry {

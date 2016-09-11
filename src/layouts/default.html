@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
+    <!-- The off canvas feature is used for mobile navigation -->
     <div class="off-canvas-wrapper">
        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
          <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
-           <!-- Close button -->
            <button class="close-button" aria-label="Close menu"
                    type="button" data-close>
              <span aria-hidden="true">&times;</span>
@@ -24,8 +24,15 @@
          </div>
          <div class="off-canvas-content" data-off-canvas-content>
           {{> navigation_top_bar}}
-          {{> hero}}
-          {{> body}}
+
+          <div class="hero-wrapper show-for-medium">
+            {{> hero}}
+          </div>
+
+          <div class="main">
+            {{> body}}
+          </div>
+
           {{> footer}}
         </div>
     <script src="{{root}}assets/js/app.js"></script>
