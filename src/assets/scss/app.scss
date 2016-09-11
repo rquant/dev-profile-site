@@ -180,10 +180,19 @@ img {
   background-color: #404040;
   margin-top: 25px;
 
-
   .contact-info {
     color: #FFF;
     font-size: 0.9rem;
+    li {
+      padding: 0.7rem 1rem;
+      a {
+        padding: 0;
+      }
+    }
+
+    @media screen and (max-width: 340px) {
+      font-size: 0.8rem;
+    }
   }
 }
 
