@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -8,252 +9,272 @@
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
-    <div class="top-bar">
-      <div class="row">
-        <div class="small-12 columns">
-          <div class="top-bar-title">
-            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-              <button class="menu-icon" type="button" data-toggle></button>
-            </span>
-            <strong><a href="/">Ryan Quant</a></strong>
-          </div>
-          <div id="responsive-menu">
-            <div class="top-bar-left">
-              <ul class="menu">
-                <li class="show-for-small-only"><a href="/">Home</a></li>
-                <li><a href="/pet_projects.html">Pet Projects</a></li>
-                <li><a href="/about.html">About</a></li>
-              </ul>
+    <div class="off-canvas-wrapper">
+       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+           <!-- Close button -->
+           <button class="close-button" aria-label="Close menu"
+                   type="button" data-close>
+             <span aria-hidden="true">&times;</span>
+           </button>
+
+           <ul class="menu vertical medium-horizontal">
+             <li class="hide-for-medium"><a href="/">Home</a></li>
+             <li><a href="/pet_projects.html">Pet Projects</a></li>
+             <li><a href="/about.html">About</a></li>
+           </ul>
+           
+         </div>
+         <div class="off-canvas-content" data-off-canvas-content>
+          <div class="top-bar">
+            <div class="row">
+              <div class="small-12 columns">
+                <div class="top-bar-title">
+                  <span data-open="offCanvas">
+                    <button class="menu-icon" type="button"></button>
+                  </span>
+                  <strong><a href="/">Ryan Quant</a></strong>
+                </div>
+                <div class="show-for-medium">
+                  <div class="top-bar-left">
+                    <ul class="menu vertical medium-horizontal">
+                      <li class="hide-for-medium"><a href="/">Home</a></li>
+                      <li><a href="/pet_projects.html">Pet Projects</a></li>
+                      <li><a href="/about.html">About</a></li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="hero">
-      <div class="row intro">
-        <div class="small-centered small-12 columns">
-          <h1>Ruby on Rails Developer</h1>
-          <p>
-            Mid-level web application engineer with professional development
-            experience accross the stack with the Ruby on Rails framework. Hungry
-            to learn new tech in and outside of work, because coding is fun and
-            doesn't get old.
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="small-12 columns menu-centered">
-          <ul class="menu social-links">
-            <li>
-              <a href="https://github.com/rquant">
-                <img src="/assets/img/logos/GitHub-Mark-Light-64px.png">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ryan-quant-a79b63a4">
-                <img src="/assets/img/logos/In-White-34px-R.png">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="row">
-      <div class="medium-8 columns">
-        <div class="resume-entry">
-          <h3>Skills</h3>
-          <p>
-            <strong>Proficient</strong><br>
-            Ruby, Ruby on Rails, RSpec, ActiveRecord (Object Relational Mapping
-            System within Rails), Javascript, HTML, Git
-          </p>
-          <p>
-            <strong>Knowledgable/Learning</strong><br>
-            CSS, Zurb Foundation, Raw SQL, Linux
-          </p>
-          <p>
-            <strong>Previous/Dormant</strong><br>
-            Java, C
-          </p>
-        </div>
-        <hr class="show-for-small-only">
-      </div>
-      <div class="medium-4 columns">
-        <div class="resume-entry">
-          <h3>Education</h3>
-          <p>
-            University of New Mexico<br>
-            Bachelor of Science in Computer Science, 2014
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="medium-12 columns small-centered">
-        <hr>
-        <div class="resume-entry">
-          <h3>Related Experience</h3>
-          <div class="employment-entry">
-            <p>
-              <strong>Ruby on Rails Developer</strong><br>
-              Jackrabbit Systems<br>
-              Santa Fe, NM<br>
-              Nov 2014 - Apr 2016
-            </p>
-            <ul class="accordion" data-accordion>
-              <li class="accordion-item is-active" data-accordion-item>
-                <a href="#" class="accordion-title">Summary</a>
-                <div class="accordion-content" data-tab-content>
-                  Developed and maintained many features accross the stack
-                  (primarily backend)
-                  for a large Rails app powering Jackrabbit's
-                  <a href="http://www.jackrabbitsystems.com/products/lodging-services/">
-                    Meta &#155 Direct</a> product and the RESTful JSON API for
-                  <a href="http://www.jackrabbitsystems.com/products/lodging-search-engine/">
-                    Book &#155 Direct</a>. This includes extensive use of data
-                    modeling, automated testing, background job processing,
-                    responsive markup, and more.
-                </div>
-              </li>
-              <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">Highlights</a>
-                <div class="accordion-content" data-tab-content>
-                  <ul>
-                    <li>
-                      Utilized the RSpec testing library to ensure 100% code
-                      coverage.
-                    </li>
-                    <li>
-                      During times of demand I worked on minor features for
-                      Jackrabbit's AngularJS based Book &#155 Direct front-end,
-                      without prior Angular knowledge.
-                    </li>
-                    <li>
-                      Worked under the AGILE Scrum practice and the JIRA tracking
-                      system.
-                    </li>
-                    <li>
-                      Worked remotely roughly 60% of the time, while able
-                      to collaborate effectively with team members and project
-                      management.
-                    </li>
-                    <li>
-                      Gained new responsibilities as time went on: Helped other
-                      developers on a regular basis (particularily with Rails
-                      back-end), performed code reviews, and production deploys.
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">Reason For Leaving</a>
-                <div class="accordion-content" data-tab-content>
-                  Strong desire to relocate from my homeland of New Mexico. Due to
-                  an alignment of favorable circumstances at the time (that may not
-                  exist in the future), I went on a sabattical abroad in
-                  Central America before making a relocation. However, I also used
-                  the time to expand my coding skills and
-                  <a href="/pet_projects.html">developed a cool pet
-                  project</a>.
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="employment-entry">
-            <p>
-              <strong>.NET Developer Intern</strong><br>
-              POD, Inc<br>
-              Albuquerque, NM<br>
-              May 2012 - June 2013
-            </p>
-            <ul class="accordion" data-accordion>
-              <li class="accordion-item is-active" data-accordion-item>
-                <a href="#" class="accordion-title">Summary</a>
-                <div class="accordion-content" data-tab-content>
-                  Gained my first experience with web application development, under
-                  Microsoft's ASP.NET MVC 3 framework.
-                </div>
-              </li>
-              <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">Highlights</a>
-                <div class="accordion-content" data-tab-content>
-                  <ul>
-                    <li>
-                      Worked closely under an amazing mentor to learn many ins and
-                      outs of full-stack web development.
-                    </li>
-                    <li>
-                      Applied object oriented programming principles learned from
-                      University coursework in an enterprise environment.
-                    </li>
-                    <li>
-                      Progressed from summer intern to part time employee.
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="accordion-item" data-accordion-item>
-                <a href="#" class="accordion-title">Reason For Leaving</a>
-                <div class="accordion-content" data-tab-content>
-                  Student exchange program at the University of Newcastle Australia.
-                  Undertook casual work during the time.
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-    
-        <div class="resume-entry">
-          <hr>
-          <h3>Other Experience</h3>
-          <div class="employment-entry">
-            <p>
-              <strong>Specialist</strong><br>
-              Apple Retail Store<br>
-              Albuquerque, NM<br>
-              August 2010 - May 2012
-            </p>
-            <section class="callout">
-              <ul>
-                 <li>
-                   Possessed broad knowledge about Apple products and services.
-                 </li>
-                 <li>
-                   Effectively connected with customers of all technical
-                   competencies to find the right solutions for their needs.
-                 </li>
-                 <li>
-                   Multitasked in a fast-paced and hectic environment.
-                 </li>
-             </ul>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="row">
-        <div class="small-12 small-centered columns">
+          
+          <section class="hero">
+            <div class="row intro">
+              <div class="small-centered small-12 columns">
+                <h1>Ruby on Rails Developer</h1>
+                <p>
+                  Mid-level web application engineer with professional development
+                  experience accross the stack with the Ruby on Rails framework. Hungry
+                  to learn new tech in and outside of work, because coding is fun and
+                  doesn't get old.
+                </p>
+              </div>
+            </div>
+          
+            <div class="row">
+              <div class="small-12 columns menu-centered">
+                <ul class="menu social-links">
+                  <li>
+                    <a href="https://github.com/rquant">
+                      <img src="/assets/img/logos/GitHub-Mark-Light-64px.png">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/ryan-quant-a79b63a4">
+                      <img src="/assets/img/logos/In-White-34px-R.png">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
           <div class="row">
-            <div class="small-12 columns menu-centered contact-info">
-              <ul class="medium-horizontal menu">
-                <li class="show-for-medium">Albuquerque, NM</li>
-                <li><a href="mailto:rquant@icloud.com">rquant@icloud.com</a></li>
-                <li>+1 (505) 401-9844</li>
-              </ul>
+            <div class="medium-8 columns">
+              <div class="resume-entry">
+                <h3>Skills</h3>
+                <p>
+                  <strong>Proficient</strong><br>
+                  Ruby, Ruby on Rails, RSpec, ActiveRecord (Object Relational Mapping
+                  System within Rails), Javascript, HTML, Git
+                </p>
+                <p>
+                  <strong>Knowledgable/Learning</strong><br>
+                  CSS, Zurb Foundation, Raw SQL, Linux
+                </p>
+                <p>
+                  <strong>Previous/Dormant</strong><br>
+                  Java, C
+                </p>
+              </div>
+              <hr class="show-for-small-only">
+            </div>
+            <div class="medium-4 columns">
+              <div class="resume-entry">
+                <h3>Education</h3>
+                <p>
+                  University of New Mexico<br>
+                  Bachelor of Science in Computer Science, 2014
+                </p>
+              </div>
             </div>
           </div>
-
+          
+          <div class="row">
+            <div class="medium-12 columns small-centered">
+              <hr>
+              <div class="resume-entry">
+                <h3>Related Experience</h3>
+                <div class="employment-entry">
+                  <p>
+                    <strong>Ruby on Rails Developer</strong><br>
+                    Jackrabbit Systems<br>
+                    Santa Fe, NM<br>
+                    Nov 2014 - Apr 2016
+                  </p>
+                  <ul class="accordion" data-accordion>
+                    <li class="accordion-item is-active" data-accordion-item>
+                      <a href="#" class="accordion-title">Summary</a>
+                      <div class="accordion-content" data-tab-content>
+                        Developed and maintained many features accross the stack
+                        (primarily backend)
+                        for a large Rails app powering Jackrabbit's
+                        <a href="http://www.jackrabbitsystems.com/products/lodging-services/">
+                          Meta &#155 Direct</a> product and the RESTful JSON API for
+                        <a href="http://www.jackrabbitsystems.com/products/lodging-search-engine/">
+                          Book &#155 Direct</a>. This includes extensive use of data
+                          modeling, automated testing, background job processing,
+                          responsive markup, and more.
+                      </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                      <a href="#" class="accordion-title">Highlights</a>
+                      <div class="accordion-content" data-tab-content>
+                        <ul>
+                          <li>
+                            Utilized the RSpec testing library to ensure 100% code
+                            coverage.
+                          </li>
+                          <li>
+                            During times of demand I worked on minor features for
+                            Jackrabbit's AngularJS based Book &#155 Direct front-end,
+                            without prior Angular knowledge.
+                          </li>
+                          <li>
+                            Worked under the AGILE Scrum practice and the JIRA tracking
+                            system.
+                          </li>
+                          <li>
+                            Worked remotely roughly 60% of the time, while able
+                            to collaborate effectively with team members and project
+                            management.
+                          </li>
+                          <li>
+                            Gained new responsibilities as time went on: Helped other
+                            developers on a regular basis (particularily with Rails
+                            back-end), performed code reviews, and production deploys.
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                      <a href="#" class="accordion-title">Reason For Leaving</a>
+                      <div class="accordion-content" data-tab-content>
+                        Strong desire to relocate from my homeland of New Mexico. Due to
+                        an alignment of favorable circumstances at the time (that may not
+                        exist in the future), I went on a sabattical abroad in
+                        Central America before making a relocation. However, I also used
+                        the time to expand my coding skills and
+                        <a href="/pet_projects.html">developed a cool pet
+                        project</a>.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+          
+                <div class="employment-entry">
+                  <p>
+                    <strong>.NET Developer Intern</strong><br>
+                    POD, Inc<br>
+                    Albuquerque, NM<br>
+                    May 2012 - June 2013
+                  </p>
+                  <ul class="accordion" data-accordion>
+                    <li class="accordion-item is-active" data-accordion-item>
+                      <a href="#" class="accordion-title">Summary</a>
+                      <div class="accordion-content" data-tab-content>
+                        Gained my first experience with web application development, under
+                        Microsoft's ASP.NET MVC 3 framework.
+                      </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                      <a href="#" class="accordion-title">Highlights</a>
+                      <div class="accordion-content" data-tab-content>
+                        <ul>
+                          <li>
+                            Worked closely under an amazing mentor to learn many ins and
+                            outs of full-stack web development.
+                          </li>
+                          <li>
+                            Applied object oriented programming principles learned from
+                            University coursework in an enterprise environment.
+                          </li>
+                          <li>
+                            Progressed from summer intern to part time employee.
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                      <a href="#" class="accordion-title">Reason For Leaving</a>
+                      <div class="accordion-content" data-tab-content>
+                        Student exchange program at the University of Newcastle Australia.
+                        Undertook casual work during the time.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="resume-entry">
+                <hr>
+                <h3>Other Experience</h3>
+                <div class="employment-entry">
+                  <p>
+                    <strong>Specialist</strong><br>
+                    Apple Retail Store<br>
+                    Albuquerque, NM<br>
+                    August 2010 - May 2012
+                  </p>
+                  <section class="callout">
+                    <ul>
+                       <li>
+                         Possessed broad knowledge about Apple products and services.
+                       </li>
+                       <li>
+                         Effectively connected with customers of all technical
+                         competencies to find the right solutions for their needs.
+                       </li>
+                       <li>
+                         Multitasked in a fast-paced and hectic environment.
+                       </li>
+                   </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <footer class="footer">
+            <div class="row">
+              <div class="small-12 small-centered columns">
+                <div class="row">
+                  <div class="small-12 columns menu-centered contact-info">
+                    <ul class="medium-horizontal menu">
+                      <li class="show-for-medium">Albuquerque, NM</li>
+                      <li><a href="mailto:rquant@icloud.com">rquant@icloud.com</a></li>
+                      <li>+1 (505) 401-9844</li>
+                    </ul>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+          </footer>
+          
         </div>
-      </div>
-    </footer>
-
     <script src="assets/js/app.js"></script>
   </body>
 </html>

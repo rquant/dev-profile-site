@@ -10,10 +10,24 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
-    {{> navigation}}
-    {{> hero}}
-    {{> body}}
-    {{> footer}}
+    <div class="off-canvas-wrapper">
+       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+           <!-- Close button -->
+           <button class="close-button" aria-label="Close menu"
+                   type="button" data-close>
+             <span aria-hidden="true">&times;</span>
+           </button>
+
+           {{> navigation_menu}}
+         </div>
+         <div class="off-canvas-content" data-off-canvas-content>
+          {{> navigation_top_bar}}
+          {{> hero}}
+          {{> body}}
+          {{> footer}}
+        </div>
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

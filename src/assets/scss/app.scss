@@ -49,9 +49,11 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-//$accordion-content-color: green;
+.off-canvas-wrapper {
+  background: #e6e6e6;
+}
 
-body {
+.off-canvas-content {
   font-family: Avenir;
   background: #DADADA;
 }

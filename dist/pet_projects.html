@@ -9,133 +9,153 @@
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
-    <div class="top-bar">
-      <div class="row">
-        <div class="small-12 columns">
-          <div class="top-bar-title">
-            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-              <button class="menu-icon" type="button" data-toggle></button>
-            </span>
-            <strong><a href="/">Ryan Quant</a></strong>
-          </div>
-          <div id="responsive-menu">
-            <div class="top-bar-left">
-              <ul class="menu">
-                <li class="show-for-small-only"><a href="/">Home</a></li>
-                <li><a href="/pet_projects.html">Pet Projects</a></li>
-                <li><a href="/about.html">About</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <section class="hero">
-      <div class="row intro">
-        <div class="small-centered small-12 columns">
-          <h1>Ruby on Rails Developer</h1>
-          <p>
-            Mid-level web application engineer with professional development
-            experience accross the stack with the Ruby on Rails framework. Hungry
-            to learn new tech in and outside of work, because coding is fun and
-            doesn't get old.
-          </p>
-        </div>
-      </div>
-    
-      <div class="row">
-        <div class="small-12 columns menu-centered">
-          <ul class="menu social-links">
-            <li>
-              <a href="https://github.com/rquant">
-                <img src="/assets/img/logos/GitHub-Mark-Light-64px.png">
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ryan-quant-a79b63a4">
-                <img src="/assets/img/logos/In-White-34px-R.png">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <div class="row">
-      <div class="medium-12 columns small-centered">
-        <div class="pet-projects-entry">
-          <h3>Space Bounce</h3>
-          <p>
-            In an effort to strengthen my Javascript skills (and because I've always wanted
-            to create a game) I developed Space Bounce, a desktop HTML5 game that
-            incorporates real time physics.
-          </p>
-    
-          <div class="pet-project-thumbnail">
-            <img class="small-centered" src="assets/img/screenshots/spacebounce.png">
+    <div class="off-canvas-wrapper">
+       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+           <!-- Close button -->
+           <button class="close-button" aria-label="Close menu"
+                   type="button" data-close>
+             <span aria-hidden="true">&times;</span>
+           </button>
+
+           <ul class="menu vertical medium-horizontal">
+             <li class="hide-for-medium"><a href="/">Home</a></li>
+             <li><a href="/pet_projects.html">Pet Projects</a></li>
+             <li><a href="/about.html">About</a></li>
+           </ul>
+           
+         </div>
+         <div class="off-canvas-content" data-off-canvas-content>
+          <div class="top-bar">
             <div class="row">
-              <div class="medium-4 small-centered columns">
-                <div class="menu-centered">
-                  <ul class="menu">
-                    <li>
-                      <a href="https://spacebounce.herokuapp.com">
-                        Play (dekstop only)
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/rquant/space_bounce">
-                        View Source Code
-                      </a>
-                    </li>
-                  </ul>
+              <div class="small-12 columns">
+                <div class="top-bar-title">
+                  <span data-open="offCanvas">
+                    <button class="menu-icon" type="button"></button>
+                  </span>
+                  <strong><a href="/">Ryan Quant</a></strong>
+                </div>
+                <div class="show-for-medium">
+                  <div class="top-bar-left">
+                    <ul class="menu vertical medium-horizontal">
+                      <li class="hide-for-medium"><a href="/">Home</a></li>
+                      <li><a href="/pet_projects.html">Pet Projects</a></li>
+                      <li><a href="/about.html">About</a></li>
+                    </ul>
+                    
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-    
-          <p>
-            It is an object oriented Javascript
-            application combining powerful JS libraries to bring it to life. The
-            Flash-esque CreateJS library suite takes advantage of HTML5 and was
-            used for vector graphics, animation, asset loading, audio, event
-            handling, and more. The Box2DWeb library is an industrial strength physics
-            engine used to handle all the physics  in the game. I
-            combined the two to map graphical objects to physical bodies, creating
-            a game that is both interesting to play and look at.
-          </p>
-          <p>
-            Typically I work within a well structured framework such as Ruby on
-            Rails, which uses the MVC architectural pattern.
-            I did not do that for this project and
-            by far the most difficult aspect of development was creating
-            modular, decoupled code. This caused me to think hard about architecture
-            in a way I haven't before.
-            The implementation I took ended up taking advantage of established
-            Javascript design patterns such as the Publish/Subscribe and Mediator
-            pattern which greatly helped out.
-          </p>
-        </div>
-      </div>
-    </div>
-    
-    <footer class="footer">
-      <div class="row">
-        <div class="small-12 small-centered columns">
+          
+          <section class="hero">
+            <div class="row intro">
+              <div class="small-centered small-12 columns">
+                <h1>Ruby on Rails Developer</h1>
+                <p>
+                  Mid-level web application engineer with professional development
+                  experience accross the stack with the Ruby on Rails framework. Hungry
+                  to learn new tech in and outside of work, because coding is fun and
+                  doesn't get old.
+                </p>
+              </div>
+            </div>
+          
+            <div class="row">
+              <div class="small-12 columns menu-centered">
+                <ul class="menu social-links">
+                  <li>
+                    <a href="https://github.com/rquant">
+                      <img src="/assets/img/logos/GitHub-Mark-Light-64px.png">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/ryan-quant-a79b63a4">
+                      <img src="/assets/img/logos/In-White-34px-R.png">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
           <div class="row">
-            <div class="small-12 columns menu-centered contact-info">
-              <ul class="medium-horizontal menu">
-                <li class="show-for-medium">Albuquerque, NM</li>
-                <li><a href="mailto:rquant@icloud.com">rquant@icloud.com</a></li>
-                <li>+1 (505) 401-9844</li>
-              </ul>
+            <div class="medium-12 columns small-centered">
+              <div class="pet-projects-entry">
+                <h3>Space Bounce</h3>
+                <p>
+                  In an effort to strengthen my Javascript skills (and because I've always wanted
+                  to create a game) I developed Space Bounce, a desktop HTML5 game that
+                  incorporates real time physics.
+                </p>
+          
+                <div class="pet-project-thumbnail">
+                  <img class="small-centered" src="assets/img/screenshots/spacebounce.png">
+                  <div class="row">
+                    <div class="medium-4 small-centered columns">
+                      <div class="menu-centered">
+                        <ul class="menu">
+                          <li>
+                            <a href="https://spacebounce.herokuapp.com">
+                              Play (dekstop only)
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/rquant/space_bounce">
+                              View Source Code
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <p>
+                  It is an object oriented Javascript
+                  application combining powerful JS libraries to bring it to life. The
+                  Flash-esque CreateJS library suite takes advantage of HTML5 and was
+                  used for vector graphics, animation, asset loading, audio, event
+                  handling, and more. The Box2DWeb library is an industrial strength physics
+                  engine used to handle all the physics  in the game. I
+                  combined the two to map graphical objects to physical bodies, creating
+                  a game that is both interesting to play and look at.
+                </p>
+                <p>
+                  Typically I work within a well structured framework such as Ruby on
+                  Rails, which uses the MVC architectural pattern.
+                  I did not do that for this project and
+                  by far the most difficult aspect of development was creating
+                  modular, decoupled code. This caused me to think hard about architecture
+                  in a way I haven't before.
+                  The implementation I took ended up taking advantage of established
+                  Javascript design patterns such as the Publish/Subscribe and Mediator
+                  pattern which greatly helped out.
+                </p>
+              </div>
             </div>
           </div>
-    
+          
+          <footer class="footer">
+            <div class="row">
+              <div class="small-12 small-centered columns">
+                <div class="row">
+                  <div class="small-12 columns menu-centered contact-info">
+                    <ul class="medium-horizontal menu">
+                      <li class="show-for-medium">Albuquerque, NM</li>
+                      <li><a href="mailto:rquant@icloud.com">rquant@icloud.com</a></li>
+                      <li>+1 (505) 401-9844</li>
+                    </ul>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+          </footer>
+          
         </div>
-      </div>
-    </footer>
-    
     <script src="assets/js/app.js"></script>
   </body>
 </html>
