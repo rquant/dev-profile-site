@@ -49,8 +49,15 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-.off-canvas-wrapper {
-  background: #e6e6e6;
+.off-canvas-wrapper, .off-canvas {
+  background: #292e31;
+  .navigation-menu {
+    @include  breakpoint(small only) {
+      a {
+        color: #ffffff;
+      }
+    }
+  }
 }
 
 .off-canvas-content {
@@ -83,26 +90,16 @@ img {
     }
   }
 
-  @include  breakpoint(small only) {
-    #responsive-menu {
-      display: none;
-      a:first-child {
-        padding-left: 0;
-      }
-    }
-  }
-
   @include breakpoint(medium) {
     .menu-icon {
       display: none;
     }
-  }
-
-  li a {
-    color: #BABABA;
-  }
-  li a:hover {
-    color: #FFF;
+    li a {
+      color: #BABABA;
+    }
+    li a:hover {
+      color: #FFF;
+    }
   }
 }
 
